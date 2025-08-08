@@ -1,6 +1,5 @@
 # scursor
 
-[![CI](https://github.com/stepfunc/scursor/workflows/CI/badge.svg)](https://github.com/stepfunc/scursor/actions)
 [![Crates.io](https://img.shields.io/crates/v/scursor.svg)](https://crates.io/crates/scursor)
 [![Documentation](https://docs.rs/scursor/badge.svg)](https://docs.rs/scursor)
 
