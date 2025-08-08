@@ -105,6 +105,13 @@ impl<'a> ReadCursor<'a> {
         Ok(high << 8 | low)
     }
 
+    /// Read a u24 from a little-endian representation
+    pub fn read_u24_le(&mut self) -> Result<u32, ReadError> {
+        let low = self.read_u16_le()? as u32;
+        let high = self.read_u8()? as u32;
+        Ok((high << 16) | low)
+    }
+
     /// Read a i16 from a little-endian representation
     pub fn read_i16_le(&mut self) -> Result<i16, ReadError> {
         self.read_u16_le().map(|x| x as i16)
